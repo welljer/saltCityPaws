@@ -1,7 +1,7 @@
-CREATE DATABASE saunter_db;
-USE saunter_db;
+CREATE DATABASE client_db;
+USE client_db;
 
-CREATE TABLE saunter
+CREATE TABLE client
 (
         id INT NOT NULL AUTO_INCREMENT,
         client_name VARCHAR(120) NOT NULL,

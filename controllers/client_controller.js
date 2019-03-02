@@ -7,8 +7,8 @@ var db = require("../models");
 
 
 /*==================================EXPRESS ROUTES====================================*/
-router.get('/', function (req, res){
-	//retrieve all data from requested walk table
+router.get('/', function (req, res) {
+        //retrieve all data from requested walk table
     db.Saunter.findAll({
         include: [db.Temperatures]
         }).then(function (data){
