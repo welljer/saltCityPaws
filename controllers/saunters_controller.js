@@ -63,9 +63,9 @@ router.put('/index/update/:id', function (req, res){
     },
     {
     where: {id: req.params.id}
-    }).then(function(data){
+    }).then(function (data){
     res.redirect('/');
-    }).catch(function(err){
+    }).catch(function (err){
             console.log(err);
     });
 
