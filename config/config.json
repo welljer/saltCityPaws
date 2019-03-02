@@ -1,7 +1,7 @@
 {
   "development": {
     "username": "root",
-    "password": null,
+    "password": "Welljer5",
     "database": "saunter_db",
     "host": "localhost",
     "dialect": "mysql"
