@@ -1,6 +1,10 @@
+// ----------------- this be our DB Model ------------------------
+
+"use strict";
+
 module.exports = function(sequelize, DataTypes){
-  var Saunterer = sequelize.define('saunterer', {
-    client_name: {
+  var Saunter = sequelize.define('saunterer',{
+    client_name:  {
       type: DataTypes.STRING,
       allowNull: false,
     },
@@ -30,5 +34,5 @@ module.exports = function(sequelize, DataTypes){
     },
 
   });
-   return Saunterer;
+   return Saunter;
   };
