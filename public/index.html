@@ -8,8 +8,8 @@
 
     <!-- CSS  -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
-    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="./materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="./style.css" type="text/css" rel="stylesheet" media="screen,projection" />
 <!--Google Fonts-->
 <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
 
@@ -22,12 +22,12 @@
         <img src="images/logo.png">
       </a> -->
             <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a href="#">HOME</a></li>
+                <li><a id="home" href="#">HOME</a></li>
                 <!-- <li><a href="#">SCHEDULE</a></li> -->
-                <li><a href="#">PRICING</a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">CONTACT US</a></li>
-                <li><a href="#">login</a></li>
+                <li><a id="pricing" href="#">PRICING</a></li>
+                <li><a id="about" href="#">ABOUT</a></li>
+                <li><a id="contact"href="#">CONTACT US</a></li>
+                <li><a id="login" href="#">login</a></li>
             </ul>
 
             <ul id="nav-mobile" class="sidenav">
@@ -52,7 +52,7 @@
 
             </div>
         </div>
-        <div class="responsive-img parallax"><img src="images/snout.jpeg" alt="img 1"></div>
+        <div class="responsive-img parallax"><img src="../public/images/snout.jpeg" alt="img 1"></div>
     </div>
 
 
@@ -76,7 +76,7 @@
                 <div class="col s12 m4">
                     <div class="icon-block">
                         <h2 class="center black-text">
-                            <a href=""><i class="material-icons">calendar_today</i></a>
+                            <a id="calendar" href=""><i class="material-icons">calendar_today</i></a>
                         </h2>
                         <h5 class="center">Schedule A Stroll</h5>
 
@@ -87,7 +87,7 @@
                 <div class="col s12 m4">
                     <div class="icon-block">
                         <h2 class="center black-text">
-                            <a href=""><i class="material-icons">phone</i></a>
+                            <a  id="phone" href=""><i class="material-icons">phone</i></a>
                         </h2>
                         <h5 class="center">Give Us A Ring</h5>
 
@@ -98,7 +98,7 @@
                 <div class="col s12 m4">
                     <div class="icon-block">
                         <h2 class="center black-text">
-                            <a href=""><i class="material-icons">pets</i></a>
+                            <a id="faq" href=""><i class="material-icons">pets</i></a>
                         </h2>
                         <h5 class="center">FAQ</h5>
 
@@ -148,7 +148,7 @@
                 </div>
             </div>
         </div>
-        <div class="parallax"><img src="images/paws.jpg" alt="Unsplashed background img 3"></div>
+        <div class="parallax"><img src="./images/paws.jpg" alt="Unsplashed background img 3"></div>
     </div>
 
     <footer class="page-footer black">
@@ -165,9 +165,7 @@
                     <h5>
                         <a class="waves-effect waves-light btn white-text" href="">Follow us on Instagram</a>
                     </h5>
-                    <!-- <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our
-            full time job. Any amount would help support and continue development on this project and is greatly
-            appreciated.</p> -->
+  
 
 
                 </div>
