@@ -9,7 +9,7 @@ var db = require("../models");
 /*==================================EXPRESS ROUTES====================================*/
 router.get('/', function (req, res) {
         //retrieve all data from requested walk table
-    db.Saunter.findAll({
+    db.Dog.findAll({
         include: [db.Temperatures]
         }).then(function (data){
         var hbsObject = {Saunter: data};
@@ -21,7 +21,7 @@ router.get('/', function (req, res) {
 
 router.post('/index/create', function (req, res) {
 	//create walk request
-	db.Client.create({
+	db.Dog.create({
             client_name: req.body.client_name,
             client_phone: req.body.client_phone,
             client_email: req.body.home_address,
@@ -38,7 +38,7 @@ router.post('/index/create', function (req, res) {
 
 router.put('/index/update/:id', function (req, res){
 	//update table
-	db.Client.create({
+	db.Dog.create({
         client_name: req.body.client_name,
         client_phone: req.body.client_phone,
         client_email: req.body.home_address,
@@ -53,7 +53,7 @@ router.put('/index/update/:id', function (req, res){
             console.log(err);
     });
 
-    db.Client.update({
+    db.Dog.update({
         client_name: req.body.client_name,
         client_phone: req.body.client_phone,
         client_email: req.body.home_address,

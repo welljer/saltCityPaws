@@ -1,9 +1,9 @@
-// ----------------- this be our DB Model ------------------------
+// ----------------- this be our Dog DB Model ------------------------
 
 "use strict";
 
 module.exports = function(sequelize, DataTypes){
-  var Client = sequelize.define('Client',{
+  var Dog = sequelize.define('Dog',{
     client_name:  {
       type: DataTypes.STRING,
       allowNull: false,
@@ -34,5 +34,5 @@ module.exports = function(sequelize, DataTypes){
     },
 
   });
-   return Client;
+   return Dog;
   };

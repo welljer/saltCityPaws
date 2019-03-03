@@ -1,7 +1,7 @@
-CREATE DATABASE client_db;
-USE client_db;
+CREATE DATABASE dog_db;
+USE dog_db;
 
-CREATE TABLE client
+CREATE TABLE dog
 (
         id INT NOT NULL AUTO_INCREMENT,
         client_name VARCHAR(120) NOT NULL,
@@ -10,6 +10,6 @@ CREATE TABLE client
         home_address VARCHAR(60) NOT NULL,
         dog_name VARCHAR(20) NOT NULL,
         dog_breed VARCHAR(20) NOT NULL,
-        dog_age VARCHAR(20) NOT NULL,
+        dog_age INTEGER(100) NOT NULL,
         PRIMARY KEY (id)
 )

@@ -2,7 +2,7 @@
   "development": {
     "username": "root",
     "password": "Welljer5",
-    "database": "saunter_db",
+    "database": "dog_db",
     "host": "localhost",
     "dialect": "mysql"
   },
