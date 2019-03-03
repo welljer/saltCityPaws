@@ -1,9 +1,9 @@
-// ----------------- this be our DB Model ------------------------
+// ----------------- this be our dog DB Model ------------------------
 
 "use strict";
 
 module.exports = function(sequelize, DataTypes){
-  var Saunter = sequelize.define('saunterer',{
+  var Dog = sequelize.define('dog',{
     client_name:  {
       type: DataTypes.STRING,
       allowNull: false,
@@ -33,6 +33,10 @@ module.exports = function(sequelize, DataTypes){
       allowNull: false,
     },
 
+  // timestamp
+  // createdAt: false,
+  // updatedAt: false
   });
-   return Saunter;
+
+   return Dog;
   };

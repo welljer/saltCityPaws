@@ -9,10 +9,10 @@ var db = require("../models");
 /*==================================EXPRESS ROUTES====================================*/
 router.get('/', function (req, res){
 	//retrieve all data from requested walk table
-    db.Saunter.findAll({
-        include: [db.Temperatures]
+    db.dog.findAll({
+        include: [db.dog]
         }).then(function (data){
-        var hbsObject = {Saunter: data};
+        var hbsObject = {dog: data};
         res.render('index', hbsObject);
         }).catch(function (err){
                 console.log(err);
@@ -21,7 +21,7 @@ router.get('/', function (req, res){
 
 router.post('/index/create', function (req, res) {
 	//create walk request
-	db.Saunter.create({
+	db.dog.create({
             client_name: req.body.client_name,
             client_phone: req.body.client_phone,
             client_email: req.body.home_address,
@@ -38,7 +38,7 @@ router.post('/index/create', function (req, res) {
 
 router.put('/index/update/:id', function (req, res){
 	//update table
-	db.Saunter.create({
+	db.dog.create({
         client_name: req.body.client_name,
         client_phone: req.body.client_phone,
         client_email: req.body.home_address,
@@ -48,18 +48,22 @@ router.put('/index/update/:id', function (req, res){
     }, {
         where: {id: req.params.id}
     }).then(function (data) {
-            console.log("Update : " + req.body.temp);
+            console.log("Update : " + req.body.dog);
     }).catch(function (err){
             console.log(err);
     });
 
-    db.Saunter.update({
-        client_name: req.body.client_name,
+    db.dog.update({
+        client_firstName: req.body.client_firstNme,
+        client_lastName: req.body.client_lastName,
         client_phone: req.body.client_phone,
         client_email: req.body.home_address,
         dog_name: req.body.dog_name,
+        dog_weight: req.body.dog_weight,
         dog_breed: req.body.dog_breed,
-        dog_age: req.body.dog_age
+        dog_age: req.body.dog_age,
+        vet_name: req.body.vet_name,
+        vet_number: req.body.vet_phoneNumber
     },
     {
     where: {id: req.params.id}
