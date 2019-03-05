@@ -11,7 +11,7 @@ module.exports = {
       human_name: 'Syd Barret',
       human_phone: '8015381029',
       human_email: 'theMadCapLaughs@wetherby.com',
-      human_zip: '84109'
+      human_address: '84109'
     }]);
   
     /*

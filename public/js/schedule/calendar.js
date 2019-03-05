@@ -1,6 +1,7 @@
 //const CALENDAR_URL = require('./settings.js').calendarUrl;
+var $exampleList = $("#example-list");
 var cal = require('./primary/calendar-api.js');
-require('./date.js'); 
+require('./event.js'); 
 
 var colourDict = { "fgd": 1, "drone": 2, "queen-1": 3, "queen-2": 4, "queen-combined": 5 };
 var timeslotDict = {};
@@ -24,10 +25,6 @@ function getTimeslotName(startTime) {
 function countSlotsWithinTimeframe(startTime, endTime) {
     var timeDiff = endTime.getTime() - startTime.getTime();
     return Math.round(timeDiff / (30 * 60 * 1000));
-}
-
-exports.getColourForRoom = function (roomname) {
-    return colourDict[roomname];
 };  
 
 exports.listBookedEvent = function(startDateTime, endDateTime, query) {
@@ -98,3 +95,4 @@ exports.insertEvent = function(bookingSummary, startDateTime, endDateTime, locat
 exports.deleteEvent = function(eventId){ 
     return cal.deleteEvent(eventId);
 };
+
