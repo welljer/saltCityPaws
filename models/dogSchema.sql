@@ -1,7 +1,7 @@
-CREATE DATABASE saunter_db;
-USE saunter_db;
+CREATE DATABASE dog_db;
+USE dog_db;
 
-CREATE TABLE saunter
+CREATE TABLE dog
 (
         id INT NOT NULL AUTO_INCREMENT,
         client_name VARCHAR(120) NOT NULL,
@@ -10,6 +10,6 @@ CREATE TABLE saunter
         home_address VARCHAR(60) NOT NULL,
         dog_name VARCHAR(20) NOT NULL,
         dog_breed VARCHAR(20) NOT NULL,
-        dog_age VARCHAR(20) NOT NULL,
+        dog_age INTEGER(100) NOT NULL,
         PRIMARY KEY (id)
 )
