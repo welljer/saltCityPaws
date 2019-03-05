@@ -1,0 +1,15 @@
+body{
+    background-image: url("./images/catdog.jpg");
+    background-repeat: no-repeat; 
+    background-position: center; 
+    background-size: cover; 
+}
+
+.header{
+    text-align: center; 
+}
+
+.newBody{
+    background-image: url("./images/pas.jpg"); 
+    
+}

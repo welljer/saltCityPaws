@@ -4,18 +4,23 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <title>Contact Us | Salt City Paws</title>
+
 
     <!-- CSS  -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="./materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
     <link href="./style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+
+    <link href="./survey.css" type="text/css" rel="stylesheet" media="screen,projection" />
     <!--Google Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
 
 </head>
 
-<body>
+
+<body class="newBody">
     <!--nav bar-->
     <nav class="white" role="navigation">
         <div class="nav-wrapper container">
@@ -26,7 +31,6 @@
                 <li><a id="about" href="about.html">ABOUT</a></li>
                 <li><a id="contact" href="contact.html">CONTACT US</a></li>
                 <li><a id="login" href="login.html">login</a></li>
-            </ul>
 
             <ul id="nav-mobile" class="sidenav">
                 <li><a href="#">Navbar Link</a></li>
@@ -34,6 +38,7 @@
             <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         </div>
     </nav>
+
 
     <div id="index-banner" class="parallax-container">
         <div class="section no-pad-bot">
@@ -81,3 +86,39 @@
 </body>
 
 </html>
+=======
+    <div>
+        <h1 style="text-align: center; color:burlywood;">Contact Us</h1>
+    </div>
+    <div class="row">
+        <form class="col s12">
+            <div class="row">
+                <div class="input-field col s6">
+                    <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+                    <label for="first_name" style="font-weight: bold; color:burlywood;"><br><br>First Name</label>
+                </div>
+                <div class="input-field col s6">
+                    <input placeholder="Placeholder" id="last_name" type="text" class="validate">
+                    <label for="last_name" style="font-weight: bold; color:burlywood;"><br><br>Last Name</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s6">
+                    <input id="email" type="email" class="validate">
+                    <label for="email" style="font-weight: bold; color:burlywood;"><br><br>Email</label>
+                </div>
+            </div>
+            <div class="row">
+                <form class="col s12">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <textarea id="textarea1" class="materialize-textarea"></textarea>
+                            <label for="textarea1" style="font-weight: bold; color:burlywood;"><br><br>Message</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </form>
+    </div>
+</body>
+
