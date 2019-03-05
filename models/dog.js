@@ -2,8 +2,9 @@
 
 "use strict";
 
+
 module.exports = function(sequelize, DataTypes){
-  var Saunter = sequelize.define('saunterer',{
+  var Dog = sequelize.define('dog',{
     client_name:  {
       type: DataTypes.STRING,
       allowNull: false,
@@ -34,5 +35,7 @@ module.exports = function(sequelize, DataTypes){
     },
 
   });
-   return Saunter;
+   return Dog;
+  
   };
+  

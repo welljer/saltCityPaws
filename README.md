@@ -13,5 +13,9 @@
 ### Packages Used
 
 * [Express](https://expressjs.com/)
-* [Google Calendar](https://github.com/yuhong90/node-google-calendar)
 * [Sequelize](http://docs.sequelizejs.com/)
+* [mySQL2]()
+
+### APIs
+
+* [Google Maps](https://github.com/yuhong90/node-google-calendar)
