@@ -3,7 +3,7 @@
 "use strict";
 
 module.exports = function(sequelize, DataTypes){
-  var Human = sequelize.define('Dog',{
+  var Human = sequelize.define('human',{
     human_name:  {
       type: DataTypes.STRING,
       allowNull: false,
@@ -17,5 +17,6 @@ module.exports = function(sequelize, DataTypes){
       allowNull: false,
     },
   });
+  
    return Human;
   };
