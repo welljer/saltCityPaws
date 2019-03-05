@@ -32,7 +32,15 @@ module.exports = function(sequelize, DataTypes){
     dog_age: {
       type: DataTypes.STRING,
       allowNull: false,
+    }, 
+    vet_name: {
+      type: DataTypes.STRING,
+      allowNull: false,
     },
+    vet_phoneNumber: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    }
 
   });
    return Dog;

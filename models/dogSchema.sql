@@ -11,5 +11,7 @@ CREATE TABLE dog
         dog_name VARCHAR(20) NOT NULL,
         dog_breed VARCHAR(20) NOT NULL,
         dog_age INTEGER(100) NOT NULL,
+        vet_name VARCHAR(100) NOT NULL,
+        vet_phone VARCHAR(50) NOT NULL,
         PRIMARY KEY (id)
 )
