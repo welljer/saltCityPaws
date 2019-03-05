@@ -13,3 +13,10 @@ body{
     background-color: white;
     
 }
+
+.ryan{
+    background-image: url("images/catdog.jpg");
+    background-repeat: no-repeat; 
+    background-position: center; 
+    background-size: cover; 
+}
