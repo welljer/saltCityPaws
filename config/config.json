@@ -1,7 +1,7 @@
 {
   "development": {
     "username": "root",
-    "password": "Formulad1",
+    "password": "R#tenenbaum",
     "database": "dog_db",
     "host": "localhost",
     "dialect": "mysql"

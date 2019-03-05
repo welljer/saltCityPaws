@@ -36,6 +36,8 @@ function searchLocations() {
         } else {
             alert(address + ' not found');
         }
+        
+        console.log(results[0].geometry.location);
     });
 }
 
@@ -64,8 +66,8 @@ function searchLocationsNear(center) {
         var bounds = new google.maps.LatLngBounds();
         for (var i = 0; i < markerNodes.length; i++) {
             var id = markerNodes[i].getAttribute("id");
-            var name = markerNodes[i].getAttribute("name");
-            var address = markerNodes[i].getAttribute("address");
+            var name = markerNodes[i].getAttribute("human_name");
+            var address = markerNodes[i].getAttribute("human_address");
             var distance = parseFloat(markerNodes[i].getAttribute("distance"));
             var latlng = new google.maps.LatLng(
                 parseFloat(markerNodes[i].getAttribute("lat")),
@@ -88,6 +90,7 @@ function searchLocationsNear(center) {
                     google.maps.event.trigger(markers[markerNum], 'click');
                 };
             };
+            console.log(markerNodes);
         };
     });
 }
