@@ -1,5 +1,5 @@
 body{
-    background-image: url("./images/catdog.jpg");
+    background-image: url("images/paws.jpg");
     background-repeat: no-repeat; 
     background-position: center; 
     background-size: cover; 
@@ -10,6 +10,6 @@ body{
 }
 
 .newBody{
-    background-image: url("./images/pas.jpg"); 
+    background-color: white;
     
 }
