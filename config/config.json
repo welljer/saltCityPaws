@@ -1,14 +1,14 @@
 {
   "development": {
     "username": "root",
-    "password": "Formulad1",
+    "password": "R#tenenbaum",
     "database": "saunter_db",
     "host": "localhost",
     "dialect": "mysql"
   },
   "test": {
     "username": "root",
-    "password": "Formulad1",
+    "password": "R#tenenbaum",
     "database": "testdb",
     "host": "localhost",
     "dialect": "mysql",
