@@ -32,7 +32,7 @@ module.exports = function(sequelize, DataTypes){
     dog_age: {
       type: DataTypes.STRING,
       allowNull: false,
-    }, 
+    },
     vet_name: {
       type: DataTypes.STRING,
       allowNull: false,
