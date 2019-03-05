@@ -4,6 +4,8 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="google-signin-client_id" content="236472560425-fc8t975g4eddtrpcap9kklro0ic61qtv.apps.googleusercontent.com">
+
     <title>Login | Salt City Paws</title>
 
     <link rel="icon" href="images/pawprint.png" />
@@ -67,7 +69,8 @@
             <div class="login-box">
                 <h5>Login or Create Account Here</h5>
                 <!-- <a href="#" class="social-button" id="facebook-connect"> <span>Connect with Facebook</span></a> -->
-                <a href="#" class="social-button" id="google-connect"> <span>Connect with Google</span></a>
+                <div class="g-signin2" data-onsuccess="onSignIn" data-redirecturi="localhost:3000/schedule"></div>
+
             </div>
             <!-- </div> -->
 
@@ -116,6 +119,8 @@
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="js/materialize.js"></script>
     <script src="js/init.js"></script>
+    <script src="js/login.js"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
 
 </body>
 

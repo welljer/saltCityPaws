@@ -36,8 +36,6 @@ function searchLocations() {
         } else {
             alert(address + ' not found');
         }
-        
-        console.log(results[0].geometry.location);
     });
 }
 
@@ -59,7 +57,7 @@ function searchLocationsNear(center) {
     clearLocations();
 
     var radius = document.getElementById('radiusSelect').value;
-    var searchUrl = 'walkerlocator.php?lat=' + center.lat() + '&lng=' + center.lng() + '&radius=' + radius;
+    var searchUrl = 'walkerlocator2.php?lat=' + center.lat() + '&lng=' + center.lng() + '&radius=' + radius;
     downloadUrl(searchUrl, function (data) {
         var xml = parseXml(data);
         var markerNodes = xml.documentElement.getElementsByTagName("marker");
@@ -90,7 +88,6 @@ function searchLocationsNear(center) {
                     google.maps.event.trigger(markers[markerNum], 'click');
                 };
             };
-            console.log(markerNodes);
         };
     });
 }
@@ -115,30 +112,20 @@ function createOption(name, distance, num) {
     locationSelect.appendChild(option);
 }
 
-function downloadUrl(url, callback) {
-    var request = window.ActiveXObject ?
-        new ActiveXObject('Microsoft.XMLHTTP') :
-        new XMLHttpRequest;
-
-    request.onreadystatechange = function () {
-        if (request.readyState == 4) {
-            request.onreadystatechange = doNothing;
-            callback(request.responseText, request.status);
+    //hard coded the radius to 10 miles, if you get the value from a field if required
+    var parameters = 'lat='+ location.lat() + '&lng=' + location.lng() + '&radius=10';
+ 
+    $.ajax({
+        type: "POST",
+        dataType: 'json',
+        url: "walkerlocator.php",
+        data: parameters,
+        success: function(msg) {
+            //alert(msg);
+            displayStores(msg);
+        },
+        error:function (xhr, ajaxOptions, thrownError){
+            alert(thrownError);
         }
-    };
-
-    request.open('GET', url, true);
-    request.send(null);
+    });  /* $.ajax  */
 }
-
-function parseXml(str) {
-    if (window.ActiveXObject) {
-        var doc = new ActiveXObject('Microsoft.XMLDOM');
-        doc.loadXML(str);
-        return doc;
-    } else if (window.DOMParser) {
-        return (new DOMParser).parseFromString(str, 'text/xml');
-    }
-}
-
-function doNothing() { }
