@@ -10,7 +10,8 @@
   h2, 
   h5,
   p,
-  li {
+  li,
+  a {
    font-family: 'Gloria Hallelujah', cursive;
   }
  nav ul a,
@@ -70,7 +71,14 @@
    max-width: 100%;
    max-height: 100%;
  }
-
+/* secondary screens - background*/
+html#img1 { 
+  background: url(images/paws.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
  /* login page*/
  /* html * {
     font-family: 'Montserrat', sans-serif;
@@ -86,7 +94,7 @@
 .login-box {
   background: #fff;
   padding: 5px;
-  max-width: 300px;
+  max-width: 500px;
   margin: auto;
   text-align: center;
   letter-spacing: 1px;
