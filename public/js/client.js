@@ -57,7 +57,7 @@ function searchLocationsNear(center) {
     clearLocations();
 
     var radius = document.getElementById('radiusSelect').value;
-    var searchUrl = 'storelocator.php?lat=' + center.lat() + '&lng=' + center.lng() + '&radius=' + radius;
+    var searchUrl = 'walkerlocator.php?lat=' + center.lat() + '&lng=' + center.lng() + '&radius=' + radius;
     downloadUrl(searchUrl, function (data) {
         var xml = parseXml(data);
         var markerNodes = xml.documentElement.getElementsByTagName("marker");
