@@ -25,11 +25,13 @@
         <img src="images/logo.png">
       </a> -->
             <ul id="nav-mobile" class="right hide-on-med-and-down">
+
                 <li><a id="home" href="index.html">HOME</a></li>
                 <li><a id="pricing" href="pricing.html">PRICING</a></li>
                 <li><a id="about" href="about.html">ABOUT</a></li>
                 <li><a id="contact" href="contact.html">CONTACT US</a></li>
                 <li><a id="login" href="login.html">login</a></li>
+
             </ul>
 
             <ul id="nav-mobile" class="sidenav">
@@ -92,9 +94,11 @@
                 <div class="col s12 m4">
                     <div class="icon-block">
                         <h2 class="center black-text">
+
                             <a id="phone" href="tel:+0018018914374">
                                 <i class="material-icons">phone</i>
                             </a>
+                            <a id="phone" href=""><i class="material-icons">phone</i></a>
                         </h2>
                         <h5 class="center">Give Us A Ring</h5>
 
@@ -137,9 +141,24 @@
                     <h3><i class="mdi-content-send brown-text"></i></h3>
                     <h4>WE have you covered!</h4>
                     <p class="left-align light">Currently serving the greater Salt Lake City area and Park City, Utah.
-                        Click the map to find your neighborhood! </p> <img class="responsive-img" src="images/map.png">
+                        Click the map to find your neighborhood! </p>
                     <!-- <div><img class="responsive-img parallax"src="images/map.png" alt="map"></div> -->
                 </div>
+                <div>
+                    <label for="raddressInput">Search location:</label>
+                    <input type="text" id="addressInput" size="15" />
+                    <label for="radiusSelect">Radius:</label>
+                    <select id="radiusSelect" label="Radius">
+                        <option value="50" selected>50 kms</option>
+                        <option value="30">30 kms</option>
+                        <option value="20">20 kms</option>
+                        <option value="10">10 kms</option>
+                    </select>
+
+                    <input type="button" id="searchButton" value="Search" />
+                </div>
+                <div><select id="locationSelect" style="width: 10%; visibility: hidden"></select></div>
+                <div id="map"></div>
             </div>
         </div>
 
@@ -168,6 +187,13 @@
                     you and your dog's happiness are our main concern. We know how important your dog is to you;
                     your pup is part of your family. And as a client, your dog will be a part of our family, too.
                 </p>
+
+
+                <div class="col l6 s12">
+                    <h5>
+                        <a class="waves-effect waves-light btn white-text" href="">Follow us on Instagram</a>
+                    </h5>
+                </div>
                 <div class="col l6 s12">
                         <h5>
                                 <a class="waves-effect waves-light btn white-text" target="_blank" href="https://www.instagram.com/saltcitypaws/">Follow us on Instagram</a>
@@ -195,6 +221,10 @@
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="js/materialize.js"></script>
     <script src="js/init.js"></script>
+    <script src="js/client.js"></script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDtr2vl5nks3s-AMxuxSEAJew-3bG1ArlI&callback=initMap">
+        </script>
 
 </body>
 

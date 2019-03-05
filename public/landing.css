@@ -1,0 +1,13 @@
+body{
+    background-image: url("./images/05.jpg");
+    background-repeat: no-repeat; 
+    background-size: cover; 
+}
+
+.btn-large{
+    border-radius: 25px; 
+    font-family: 'Courier New', Courier, monospace; 
+}
+
+
+
