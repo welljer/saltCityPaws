@@ -1,5 +1,5 @@
 body{
-    background-image: url("./images/catdog.jpg");
+    background-image: url("images/paws.jpg");
     background-repeat: no-repeat; 
     background-position: center; 
     background-size: cover; 
@@ -9,3 +9,7 @@ body{
     text-align: center; 
 }
 
+.newBody{
+    background-color: white;
+    
+}
