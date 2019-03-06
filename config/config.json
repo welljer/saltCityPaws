@@ -1,14 +1,14 @@
 {
   "development": {
     "username": "root",
-    "password": "R#tenenbaum",
+    "password": "Mobylulu11!",
     "database": "dog_db",
     "host": "localhost",
     "dialect": "mysql"
   },
   "test": {
     "username": "root",
-    "password": "Formulad1",
+    "password": "Mobylulu11!",
     "database": "testdb",
     "host": "localhost",
     "dialect": "mysql",
