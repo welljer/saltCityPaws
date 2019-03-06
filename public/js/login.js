@@ -11,4 +11,10 @@ function onSignIn(googleUser) {
   // The ID token you need to pass to your backend:
   var id_token = googleUser.getAuthResponse().id_token;
   console.log("ID Token: " + id_token);
+  window.location.href = '/index.html';
+  AJAX('/server/sign-in', { id_token: id_token })
+    .then(function (user) {
+      window.location.href = '/schedule.html';
+    })
 }
+

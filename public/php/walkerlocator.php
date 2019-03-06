@@ -1,5 +1,5 @@
 <?php
-require("phpsqlsearch_dbinfo.php");
+require("*/phpsqlsearch_dbinfo.php");
 // Get parameters from URL
 $center_lat = $_GET["lat"];
 $center_lng = $_GET["lng"];
@@ -35,8 +35,8 @@ while ($row = @mysql_fetch_assoc($result)){
   $node = $dom->createElement("marker");
   $newnode = $parnode->appendChild($node);
   $newnode->setAttribute("id", $row['id']);
-  $newnode->setAttribute("name", $row['name']);
-  $newnode->setAttribute("address", $row['address']);
+  $newnode->setAttribute("human_name", $row['human_name']);
+  $newnode->setAttribute("human_address", $row['human_address']);
   $newnode->setAttribute("lat", $row['lat']);
   $newnode->setAttribute("lng", $row['lng']);
   $newnode->setAttribute("distance", $row['distance']);
