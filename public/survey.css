@@ -14,12 +14,7 @@ body{
     
 }
 
-.ryan{
-    background-image: url("images/images.jpg");
-    background-repeat: no-repeat; 
-    background-position: center; 
-    background-size: cover; 
-}
+
 
 .btn {
     margin-left: 30%; 
