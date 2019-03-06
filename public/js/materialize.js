@@ -5469,7 +5469,12 @@ $jscomp.polyfill = function (e, r, p, m) {
 
       _this30.el.M_Sidenav = _this30;
       _this30.id = _this30.$el.attr('id');
-
+      
+/*THIS IS A TEST*/
+document.addEventListener('DOMContentLoaded', function() {
+  var elems = document.querySelectorAll('.sidenav');
+  var instances = M.Sidenav.init(elems, options);
+});
       /**
        * Options for the Sidenav
        * @member Sidenav#options
