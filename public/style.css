@@ -11,7 +11,9 @@
   h5,
   p,
   li,
-  a {
+  a,
+  th,
+  td {
    font-family: 'Gloria Hallelujah', cursive;
   }
  nav ul a,
