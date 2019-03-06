@@ -3,9 +3,6 @@ var $exampleList = $("#example-list");
 var cal = require('./primary/calendar-api.js');
 require('./event.js'); 
 
-var colourDict = { "fgd": 1, "drone": 2, "queen-1": 3, "queen-2": 4, "queen-combined": 5 };
-var timeslotDict = {};
-
  
 function setupTimeArray() {
     //setup array in 30min slots from 8am-9pm
