@@ -226,3 +226,9 @@
   background-color: grey;
 }
 
+
+.btn-large{
+  border-radius: 25px; 
+  font-family:'Gloria Hallelujah', cursive;  
+  
+}
