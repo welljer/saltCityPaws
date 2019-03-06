@@ -18,6 +18,10 @@ module.exports = function(sequelize, DataTypes){
       type: DataTypes.STRING,
       allowNull: false,
     },
+    human_address: {
+        type: DataTypes.STRING,
+        allowNull: false,
+      }
   });
    return Human;
   };
