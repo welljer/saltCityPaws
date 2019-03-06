@@ -1,5 +1,5 @@
 USE dog_db;
-
+DROP TABLE IF EXISTS human;
 CREATE TABLE human
 (
         id INT NOT NULL AUTO_INCREMENT,
