@@ -6,12 +6,12 @@ module.exports = {
       human_name: 'Floyd Council',
       human_phone: '(202) 224-5444',
       human_email: 'theFloydinPink@peidmontBlues.com',
-      human_address: '84103'
+      human_address: '84103',
       }, {
       human_name: 'Syd Barret',
       human_phone: '8015381029',
       human_email: 'theMadCapLaughs@wetherby.com',
-      human_address: '84109'
+      human_address: '84109',
     }]);
   
     /*

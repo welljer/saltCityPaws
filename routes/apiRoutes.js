@@ -1,26 +1,19 @@
-"use strict";
-
-var db = require("../models/human");
+var db = require("../models");
 
 module.exports = function(app) {
-  // Get all dog
-  app.get("/", function (req, res) {
-    db.human.findAll({where: {human_address:"human"}}).then(human => {
+  app.get("/api/human", function(req, res) {
+    db.Human.findAll({
+      include: [db.Human]
+    }).then(function (human) {
       res.json(human);
     });
   });
 
-  // // Create a new dog
-  // app.post("/api/dog", function (req, res) {
-  //   db.Example.create(req.body).then(function (dbDog) {
-  //     res.json(dbDog);
-  //   });
-  // });
 
-  // Delete an dog by id
-  // app.delete("/api/dog/:id", function (req, res) {
-  //   db.Dog.destroy({ where: { id: req.params.id } }).then(function (dbDog) {
-  //     res.json(dbDog);
-  //   });
-  // });
+  app.post("/api/human", function(req, res) {
+    dog_db.Human.create(req.body).then(function (dbHuman) {
+      res.json(dbHuman);
+    });
+  });
+
 };
