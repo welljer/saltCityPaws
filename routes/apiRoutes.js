@@ -1,6 +1,7 @@
 var db = require("../models");
 
 module.exports = function(app) {
+
   app.get("/api/human", function(req, res) {
     db.Human.findAll({
       include: [db.Human]
@@ -10,10 +11,9 @@ module.exports = function(app) {
   });
 
 
-  app.post("/api/human", function(req, res) {
-    dog_db.Human.create(req.body).then(function (dbHuman) {
+  // Create a new human
+  app.post("/api/human", function (req, res) {
+    db.Human.create(req.body).then(function (dbHuman) {
       res.json(dbHuman);
     });
   });
-
-};
