@@ -1,14 +1,15 @@
-"use strict";
-
-var db = require("../models/human");
+var db = require("../models");
 
 module.exports = function(app) {
-  // Get all human
-  app.get("/", function (req, res) {
-    db.human.findAll({where: {human_address:"human"}}).then(human => {
+
+  app.get("/api/human", function(req, res) {
+    db.Human.findAll({
+      include: [db.Human]
+    }).then(function (human) {
       res.json(human);
     });
   });
+
 
   // Create a new human
   app.post("/api/human", function (req, res) {
@@ -16,11 +17,3 @@ module.exports = function(app) {
       res.json(dbHuman);
     });
   });
-
-  // Delete an dog by id
-  // app.delete("/api/dog/:id", function (req, res) {
-  //   db.Dog.destroy({ where: { id: req.params.id } }).then(function (dbDog) {
-  //     res.json(dbDog);
-  //   });
-  // });
-};
