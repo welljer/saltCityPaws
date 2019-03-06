@@ -27,7 +27,7 @@
  }
  
  .sidenav-trigger {
-   color: #26a69a;
+   color: black;
  }
  
  .parallax-container {
@@ -73,13 +73,14 @@
  }
 
 /* secondary screens - background*/
-html#img1 { 
+
+/* html#img1 { 
   background: url(images/paws.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-}
+} */
  /* login page*/
  /* html * {
     font-family: 'Montserrat', sans-serif;
