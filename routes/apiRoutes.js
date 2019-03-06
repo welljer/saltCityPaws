@@ -2,7 +2,7 @@ var db = require("../models/");
 
 module.exports = function(app) {
   // Get all dog
-  app.get("/api/dog", function (req, res) {
+  app.get("/api/human", function (req, res) {
     db.Dog.findAll({}).then(function (dbDog) {
       res.json(dbDog);
     });
@@ -15,9 +15,9 @@ module.exports = function(app) {
     });
   });
 
-  // Delete an dog by id
-  app.delete("/api/dog/:id", function (req, res) {
-    db.Dog.destroy({ where: { id: req.params.id } }).then(function (dbDog) {
+  // Create a new walker
+  app.post("/api/human", function (req, res) {
+    db.Example.create(req.body).then(function (dbDog) {
       res.json(dbDog);
     });
   });

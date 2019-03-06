@@ -1,4 +1,4 @@
-//date.js - custom functions for date object
+//event.js - custom functions for event object
 
 Date.prototype.addDays = function(d) {
     this.setDate(this.getDate() + d);
