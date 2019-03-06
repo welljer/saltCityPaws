@@ -14,7 +14,8 @@
     <link href="./style.css" type="text/css" rel="stylesheet" media="screen,projection" />
     <!--Google Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
-
+    <!-- AddEvent script -->
+    <script type="text/javascript" src="https://addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script>
 </head>
 
 <body>
@@ -39,8 +40,50 @@
             <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         </div>
     </nav>
-    <!--   schedule/cal -->
 
+    <div class="container">
+        <div class="section">
+
+            <div class="row">
+                <div class="col s12 left-align">
+                    <h3><i class="mdi-content-send brown-text"></i></h3>
+                    <h4>WE have you covered!</h4>
+                    <p class="left-align light">Currently serving the greater Salt Lake City area and Park City, Utah.
+                        Click the map to find your neighborhood! </p>
+                    <!-- <div><img class="responsive-img parallax"src="images/map.png" alt="map"></div> -->
+                </div>
+                <div>
+                    <label for="raddressInput">Search location:</label>
+                    <input type="text" id="addressInput" size="15" />
+                    <label for="radiusSelect">Radius:</label>
+                    <select id="radiusSelect" label="Radius">
+                        <option value="50" selected>50 kms</option>
+                        <option value="30">30 kms</option>
+                        <option value="20">20 kms</option>
+                        <option value="10">10 kms</option>
+                    </select>
+
+                    <input type="button" id="searchButton" value="Search" />
+                </div>
+                <div><select id="locationSelect" style="width: 10%; visibility: hidden"></select></div>
+                <div id="map"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--   schedule/cal -->
+    <div data-tockify-component="calendar" data-tockify-calendar="salt.city.paws"></div>
+
+    <!-- <div title="Add to Calendar" class="addeventatc">
+        Add to Calendar
+        <span class="start">03/20/2019 08:00 AM</span>
+        <span class="end">03/20/2019 10:00 AM</span>
+        <span class="timezone">America/Los_Angeles</span>
+        <span class="title">Summary of the event</span>
+        <span class="description">Description of the event</span>
+        <span class="location">Location of the event</span>
+    </div>
     <div id="index-banner" class="parallax-container">
         <div class="section no-pad-bot">
             <div class="container">
@@ -57,7 +100,7 @@
         <div class="responsive-img parallax"><img src="images/paws.jpg" id="alt 1">
 
         </div>
-    </div>
+    </div> -->
 
 
 
@@ -95,8 +138,15 @@
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="js/materialize.js"></script>
     <script src="js/init.js"></script>
-    <script src="js/schedule/calendar.js"></script>
-    <script src="js/schedule/event.js"></script>
+    <!-- <script src="js/schedule/event.js"></script> -->
+    <script src="js/init.js"></script>
+    <script src="js/client.js"></script>
+    <script data-cfasync="false" data-tockify-script="embed" src="https://public.tockify.com/browser/embed.js"></script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDtr2vl5nks3s-AMxuxSEAJew-3bG1ArlI&callback=initMap">
+        </script>
+
+
 
 </body>
 
