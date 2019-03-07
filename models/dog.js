@@ -4,7 +4,7 @@
 
 
 module.exports = function(sequelize, DataTypes){
-  var Dogs = sequelize.define('dog',{
+  var Dog = sequelize.define('dog',{
     client_name:  {
       type: DataTypes.STRING,
       allowNull: false,
