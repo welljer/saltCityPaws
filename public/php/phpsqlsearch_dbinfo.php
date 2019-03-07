@@ -1,5 +1,5 @@
 <?php
 $username="root";
-$password="R#tenenbaum";
+$password=process.env.php;
 $database="root-dog_db";
 ?>

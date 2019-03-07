@@ -2,7 +2,7 @@ var db = require("../models");
 
 module.exports = function(app) {
 
-  app.get("/api/human", function(req, res) {
+  app.get("/api/human", function (req, res) {
     db.Human.findAll({
       include: [db.Human]
     }).then(function (human) {
