@@ -1,11 +1,12 @@
 # Salt City Paws
 
+![Picture of home screen](https://github.com/welljer/saltCityPaws/blob/master/public/images/RMhome.JPG)
+
 To treat your dog and home with the love, care and respect we would use to treat our own. We believe in nurturing our 
 clients' dogs in their own home environment and providing your pup with a consistent and reliable schedule. At Salt City 
 Paws, you and your dog's happiness are our main concern. We know how important your dog is to you; your pup is part of 
 your family. And as a client, your dog will be a part of our family, too.
 
-![Picture of home screen](https://github.com/welljer/saltCityPaws/blob/master/public/images/RMhome.JPG)
 
 ## Technologies Used
 
@@ -26,7 +27,6 @@ your family. And as a client, your dog will be a part of our family, too.
 * [Google Maps](https://github.com/yuhong90/node-google-calendar)
 * [Google Calendar](https://developers.google.com/calendar/)
 * [Tockify](https://tockify.com/i/docs)
-
 
 # Collaborators
 
