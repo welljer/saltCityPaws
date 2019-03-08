@@ -5,6 +5,8 @@ clients' dogs in their own home environment and providing your pup with a consis
 Paws, you and your dog's happiness are our main concern. We know how important your dog is to you; your pup is part of 
 your family. And as a client, your dog will be a part of our family, too.
 
+![Picture of home screen](https://github.com/welljer/saltCityPaws/blob/master/public/images/RMhome.JPG)
+
 ## Technologies Used
 
 * [Node](https://nodejs.org/en/doc)
@@ -23,16 +25,14 @@ your family. And as a client, your dog will be a part of our family, too.
 
 * [Google Maps](https://github.com/yuhong90/node-google-calendar)
 * [Google Calendar](https://developers.google.com/calendar/)
-
-# Layout 
-
-### Homepage
+* [Tockify](https://tockify.com/i/docs)
 
 
-### Login Page
+# Collaborators
 
-
-### 
-
+* [Andrew Waterhouse](https://github.com/gudolph)
+* [Katie Loyola](https://github.com/katieloyola)
+* [Ryan Nguyen](https://github.com/2d-ink)
+* [Jeremy Cantwell](https://github.com/welljer)
 
 
